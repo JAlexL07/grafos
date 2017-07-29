@@ -1,2 +1,14 @@
 # grafos
 Recorridos sobre grafos y componentes conexas.
+
+## 1. Introducción
+Se quiere que resuelva tres problemas en los que tiene que aplicar algoritmos de recorridos sobre grafos y algoritmos para determinar componentes conexas.
+
+## Problema 1: Camino factible
+Se desea contar con su ayuda para desarrollar un sistema que permita a un turista encontrar un camino desde una ciudad de partida hasta una ciudad destino bajo ciertas consideraciones. El mapa de las ciudades corresponderá a un grafo donde los vértices representan ciudades y los lados representan un viaje en un medio de transporte desde una ciudad a otra. El peso de los vértices indica el costo de visitar una ciudad, mientras que el peso de los lados es igual al costo del medio de transporte que lleva de una ciudad a otra. El costo de llegar a la ciudad destino debe ser menor al presupuesto del turista. El costo de visitar la ciudad destino incluye el costo del transporte hasta la ciudad más el costo de estadía de las ciudades que se visitan hasta la ciudad destino, incluyendo el costo de visitar la ciudad destino. También hay un valor máximo que el turista esta dispuesto a pagar por el transporte en un viaje desde una ciudad a otra. Cuando se viaja de una ciudad a otra, el sistema primero verifica que el costo del viaje es menor que lo que el turista está dispuesto a pagar. Si el valor es más bajo entonces acepta el viaje y descuenta el costo del mismo de su presupuesto. El sistema no puede recomendar una ruta de viaje que supere el presupuesto del turista. Para resolver este problema debe usar la técnica de búsqueda en profundidad o la de búsqueda en amplitud.
+
+## Problema 2: Listar caminos
+Dado un grafo dirigido, conexo y sin circuitos, debe encontrar el número de caminos desde un vértice inicial hasta cada uno de los vértices que componen un grafo, exceptuando al vértice inicial. Para resolver este problema debe usar la técnica de búsqueda en profundidad o la de búsqueda en amplitud.
+
+## Problema 3: Camino entre componentes conexas
+Dado un grafo simple y no orientado se quiere determinar sus puntos de articulación y dado un vértice inicial y un vértice final, se quiere saber si son alcanzables suponiendo que no es posible formar un camino que contenga un punto de articulación entre los vértices inicial y final. Se tiene que el vértice inicial y/o final pueden ser puntos de articulación. Suponiendo que el grafo de entrada corresponde a intersecciones de calles, el problema puede interpretarse de la siguiente manera. Queremos saber si dadas dos personas paradas en dos intersecciones, una puede alcanzar a la otra suponiendo que las intersecciones que son puntos de articulación están bloqueadas. Si las personas parten desde una intersección que es un punto de articulación, entonces suponemos que la misma no está bloqueada porque hay una persona allí.
